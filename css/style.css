@@ -1,24 +1,28 @@
 /*------RESET------*/
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-* { 
+
+* {
     margin: 0;
     padding: 0;
 }
+
 html {
     font-family: 'Lora', serif;
 }
+
 /*--------HEADER-------*/
-header{
-    width: 100%; 
+header {
+    width: 100%;
     height: 100px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     padding-bottom: 10px;
     top: 0;
 }
-.logo-nav{
+
+.logo-nav {
     width: 200px;
     height: 100px;
     padding: 5px 10px;
@@ -30,29 +34,34 @@ header nav ul {
     margin: 0 auto;
     padding: 0;
 }
+
 header nav ul li {
     margin: 5px;
 
 }
+
 header nav ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+
 /*---------MAIN-------*/
 /*-------Carousel-------*/
 
-.slide img{
+.slide img {
     height: 60vh;
 }
-.carousel-item h2{
+
+.carousel-item h2 {
     font-size: 50px;
     color: black;
 }
 
-.carousel-item p{
+.carousel-item p {
     font-size: 20px;
     color: black;
 }
+
 /*----boton----*/
 .botones-de-enlace {
     background-color: rgb(255, 111, 190);
@@ -62,7 +71,19 @@ header nav ul li a {
     font-weight: bold;
     font-size: 1rem;
     border-radius: 15px;
+    border: 1px solid black;
+    text-decoration: none;
 }
+
+.botones-de-enlace:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 111, 190);
+}
+
+.botones-de-enlace:active {
+    background-color: rgb(240, 240, 240);
+}
+
 /*---------promos---------*/
 .title-promo {
     text-align: center;
@@ -70,11 +91,11 @@ header nav ul li a {
     font-size: 25px;
 }
 
-.products{
+.products {
     text-align: center;
 }
 
-.products div{
+.products div {
     border: 2px black solid;
     margin: 100px;
     width: 304px;
@@ -83,109 +104,113 @@ header nav ul li a {
     display: inline-block;
 }
 
-.products div img{
+.products div img {
     object-fit: cover;
 }
 
-.products div p{
+.products div p {
     margin-bottom: 30px;
     margin-top: 40px;
     font-weight: 500;
 }
+
 /*-------GRID-index-------*/
-.title-gallery{
+.title-gallery {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     background-color: #f5f5dc;
 }
 
-.grid-container-gallery{
+.grid-container-gallery {
     width: 100%;
     height: 100%;
     text-align: center;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 350px;
     gap: 10px;
 }
 
-.grid-items{
+.grid-items {
     border: 2px solid black;
 }
 
-.grid-items img{
+.grid-items img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.foto-persona{
+.foto-persona {
     grid-row: 1/4;
 }
 
-.foto-persona img{
+.foto-persona img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
+
 /*-----BLOQUE FACIALES,CORPORAL Y TIENDA----- */
-.block-faciales{
+.block-faciales {
     background-image: url(../img/corporal-banner.jpg);
-    background-position:center;
-    background-size: cover ;
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment:fixed ;
+    background-attachment: fixed;
     width: 100%;
     height: calc(80vh - 520px);
 }
 
-.block-faciales article h2{
+.block-faciales article h2 {
     font-size: 40px;
     text-align: center;
     padding-top: 70px;
     vertical-align: middle;
 }
+
 /*-----body con grid faciales y corporal----*/
 
-.grid-container-body{
+.grid-container-body {
     width: 100%;
     height: 100%;
     margin: 8rem auto;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
     gap: 3.125rem;
 }
 
-.imagenes{
+.imagenes {
     display: flex;
     justify-content: flex-end;
 }
 
-.imagenes img{
+.imagenes img {
     border-radius: 200px;
     object-fit: cover;
 }
 
-.text-grid{
+.text-grid {
     grid-column: 2/4;
 }
 
-.text-grid h4{
+.text-grid h4 {
     margin: 1rem auto;
     font-size: 1.5rem;
     color: rgb(255, 185, 240);
 }
 
-.text-grid p{
+.text-grid p {
     line-height: 2rem;
 }
 
-.ocultos{
+.ocultos {
     visibility: hidden;
 }
+
 /*------formulario------*/
 form {
     margin: 40px auto 60px 200px;
@@ -197,63 +222,69 @@ form {
     margin-bottom: 20px;
 }
 
-.email{
+.email {
     margin-bottom: 20px !important;
 }
 
-.phone{
+.phone {
     margin-bottom: 20px;
 }
 
-.consulta h3{
+.consulta h3 {
     font-size: 20px;
     margin-bottom: 7px;
 }
 
-.submit{
+.submit {
     margin-top: 10px;
 }
-/*-----contacto-----*/
-.main-contact{
+.fijo{
+    resize: none;
+}
+
+/*-----contacto-pagina-----*/
+.main-contact {
     display: flex;
     justify-content: space-around;
 }
 
-.title-contact{
+.title-contact {
     margin: 50px auto 20px 200px;
     max-width: 70vh;
 }
 
-.title-contact h2{
+.title-contact h2 {
     font-size: 50px;
     margin-bottom: 15px;
 }
 
-.title-contact h3{
+.title-contact h3 {
     font-size: 25px;
     margin-bottom: 15px;
 }
-.title-contact p{
+
+.title-contact p {
     font-size: 16px;
 }
 
-.title-contact-1{
+.title-contact-1 {
     display: flex;
     flex-direction: column;
 }
-.right-content{
+
+.right-content {
     text-align: center;
     margin: 6vh auto 120px 90px;
 }
 
-.right-content h2{
+.right-content h2 {
     margin-bottom: 8px;
     font-size: 40px !important;
 }
 
 /*---------FOOTER------*/
 
-footer{
+footer {
     background-color: #f5f5dc;
     width: 100%;
     height: 100%;
@@ -263,169 +294,243 @@ footer{
     align-items: center;
     margin-top: 3rem;
 }
-footer div{
+
+footer div {
     display: inline-block;
     margin: 40px 80px 40px 40px;
     text-align: left;
 }
 
-/*-------logo header-----*/
-.logo img{
+/*-------logo-footer-----*/
+.logo img {
     width: 150px;
     height: 90px;
 }
-/*------contact------*/
-.contacto h5{
+
+/*------contacto------*/
+.contacto h5 {
     font-size: 25px;
     margin-bottom: 15px;
 }
 
-.whatsapp{
+.whatsapp {
     display: block;
     padding: 0;
     margin: 0;
 }
 
-.whatsapp img{
+.whatsapp img {
     width: 15px;
     height: 15px;
 }
 
-.whatsapp p{
-    display: inline-block
+.whatsapp p {
+    display: inline;
+    color: black;
 }
-.email{
+
+.whatsapp a {
+    text-decoration: none;
+}
+
+.whatsapp a:visited {
+    color: black;
+}
+
+.email {
     display: block;
     padding: 0;
     margin: 0;
 }
-.email img{
+
+.email img {
     width: 15px;
     height: 15px;
 }
 
-.email p{
+.email p {
     display: inline-block;
+    color: black;
+}
+
+.email a {
+    text-decoration: none;
+}
+
+.email a:visited {
+    color: black;
 }
 
 /*------tratamientos------*/
-.Tratamientos h5{
+.Tratamientos h5 {
     font-size: 25px;
     margin-bottom: 15px;
 }
 
-.link-facial{
+.link-facial {
     display: block;
+    text-decoration: none;
+}
+
+.link-facial:visited {
+    color: black;
+}
+
+.link-corporal {
+    text-decoration: none;
+}
+
+.link-corporal:visited {
+    color: black;
 }
 
 /*-------Dirección-----*/
-.direccion h5{
+.direccion h5 {
     font-size: 25px;
     margin-bottom: 15px;
 }
 
+.direccion a {
+    text-decoration: none;
+}
+
+.direccion a:visited {
+    color: black;
+}
+
 /*-------Media-queries-----*/
-@media screen and (max-width:1290px){
-/*---grid-faciales-y-corporales----*/
-    .imagenes{
+@media screen and (max-width:1290px) {
+
+    /*---grid-faciales-y-corporales----*/
+    .imagenes {
         align-items: center;
     }
-    
-    .imagenes img{
+
+    .imagenes img {
         width: 200px;
         height: 200px;
         object-fit: cover;
         margin: 0 auto;
     }
-    .text-grid h4{
+
+    .text-grid h4 {
         font-size: 16px;
     }
 
-    .text-grid p{
+    .text-grid p {
         font-size: 12px;
     }
-/*---contact-map----*/
-    .main-contact{
+
+    /*---contact-map----*/
+    .main-contact {
         display: flex;
         flex-direction: column;
     }
-    .right-content{
+
+    .right-content {
         margin-left: 11rem;
     }
-    .right-content h2{
+
+    .right-content h2 {
         text-align: start;
     }
 
 }
 
 @media screen and (max-width:1050px) {
-    footer div{
-        margin:20px auto;
+    footer div {
+        margin: 20px auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
 }
 
-@media screen and (max-width:930px){
-    header{
+@media screen and (max-width:930px) {
+    header {
         flex-direction: column;
         height: 200px;
     }
-/*---grid-index----*/
-    .grid-container-gallery{
-        grid-template-columns: repeat(2,1fr);
+
+    /*---grid-index----*/
+    .grid-container-gallery {
+        grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 300px;
     }
-    
-    .grid-items{
+
+    .grid-items {
         grid-column: span 1;
         grid-row: span 1;
     }
-    .foto-persona{
+
+    .foto-persona {
         display: none;
     }
-    .img-9{
+
+    .img-9 {
         display: none;
     }
-/*----contacto---*/
-    .title-contact{
+
+    /*------bloque-facil-corporal-y-tienda----*/
+    .block-faciales {
+        height: 100%;
+        width: 100%;
+    }
+
+    .block-faciales article h2 {
+        padding: 0;
+        font-size: 32px;
+    }
+
+    /*----contacto---*/
+    .title-contact {
         margin: 0;
     }
-    .title-contact h2{
+
+    .title-contact h2 {
         font-size: 35px;
     }
-    .title-contact h3{
+
+    .title-contact h3 {
         font-size: 18px;
     }
-    .title-contact p{
+
+    .title-contact p {
         font-size: 13px;
         margin-bottom: 20px;
     }
-    form{
+
+    form {
         margin: 0;
     }
-    .name{
+
+    .name {
         font-size: 13px;
     }
-    .email{
+
+    .email {
         font-size: 13px;
     }
-    .phone{
+
+    .phone {
         font-size: 13px;
     }
-    .consulta{
+
+    .consulta {
         font-size: 13px;
     }
-    .right-content{
+
+    .right-content {
         width: 100%;
         margin: 3rem auto;
     }
-    .right-content h2{
+
+    .right-content h2 {
         display: none;
     }
-    .right-content iframe{
+
+    .right-content iframe {
         width: 100%;
         height: 200px;
     }
@@ -433,87 +538,96 @@ footer div{
 
 @media screen and (max-width:730px) {
 
-    header{
+    header {
         height: 100%;
     }
 
-    header img{
-        visibility:hidden;
+    header img {
+        visibility: hidden;
         position: absolute;
     }
-/*----block-faciales-y-corporales---*/
-    .block-faciales article h2{
+
+    /*----block-faciales-y-corporales---*/
+    .block-faciales article h2 {
         font-size: 32px;
     }
+
     /*---grid-faciales-y-corporales----*/
-    .grid-container-body{
+    .grid-container-body {
         grid-template-columns: 1fr;
-        grid-auto-rows: auto ;
+        grid-auto-rows: auto;
     }
 
-    .imagenes{
+    .imagenes {
         display: none;
     }
-    .text-grid{
+
+    .text-grid {
         grid-column: span 1;
     }
-/*---form----*/
-    form textarea{
+
+    /*---form----*/
+    form textarea {
         width: 300px;
         height: 100px;
     }
 }
 
 @media screen and (max-width:570px) {
-    nav ul{
+    nav ul {
         text-align: center;
         display: flex;
         align-items: center;
         padding: 0;
     }
 
-    nav ul li{
+    nav ul li {
         font-size: 15px;
     }
 
-/*----promos----*/
-    .products{
+    /*----promos----*/
+    .products {
         display: flex;
         flex-direction: column;
     }
 
-    .products div img{
+    .products div img {
         width: 200px;
         height: 200px;
     }
-    .products div{
+
+    .products div {
         width: 204px;
         height: 370px;
         margin: 30px auto;
     }
-    
-/*-----grid-index---*/
-    .grid-container-gallery{
-        grid-template-columns: repeat(1,1fr);
+
+    /*-----grid-index---*/
+    .grid-container-gallery {
+        grid-template-columns: repeat(1, 1fr);
         grid-auto-rows: 200px;
         row-gap: 25px;
     }
-    .img-8{
+
+    .img-8 {
         display: none;
     }
-    .grid-items{
+
+    .grid-items {
         border: none
     }
-/*----block-faciales-y-corporales---*/
-    .block-faciales article h2{
+
+    /*----block-faciales-y-corporales---*/
+    .block-faciales article h2 {
         font-size: 24px;
     }
-/*---grid-faciales-y-corporales----*/
-    .grid-container-body{
+
+    /*---grid-faciales-y-corporales----*/
+    .grid-container-body {
         margin: 20px auto;
     }
 
-    .text-grid h4{
+    .text-grid h4 {
         text-align: center;
     }
 }
