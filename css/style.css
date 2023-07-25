@@ -370,6 +370,7 @@ footer div {
 .link-facial {
     display: block;
     text-decoration: none;
+    color: black;
 }
 
 .link-facial:visited {
