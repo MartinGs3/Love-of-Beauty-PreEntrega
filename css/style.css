@@ -393,6 +393,7 @@ footer div {
 
 .direccion a {
     text-decoration: none;
+    color: black;
 }
 
 .direccion a:visited{
