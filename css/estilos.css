@@ -1,0 +1,391 @@
+/*------RESET------*/
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Lora', serif; }
+
+/*---------MAIN-------*/
+/*-------Carousel-------*/
+.slide img {
+  height: 60vh; }
+
+.carousel-item h2 {
+  font-size: 50px;
+  color: black; }
+
+.carousel-item p {
+  font-size: 20px;
+  color: black; }
+
+/*----boton----*/
+.botones-de-enlace {
+  background-color: #ff6fbe;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: 1px solid black;
+  text-decoration: none; }
+  .botones-de-enlace:hover {
+    background-color: white;
+    color: #ff6fbe; }
+  .botones-de-enlace:active {
+    background-color: #f0f0f0; }
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  top: 0; }
+  header .logo-nav {
+    width: 200px;
+    height: 100px;
+    padding: 5px 10px; }
+  header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding: 0; }
+    header nav ul li {
+      margin: 5px; }
+      header nav ul li a {
+        text-decoration: none;
+        color: black; }
+
+section .title-promo {
+  text-align: center;
+  margin-top: 70px; }
+  section .title-promo h2 {
+    font-size: 25px; }
+
+section .products {
+  text-align: center; }
+  section .products div {
+    border: 2px black solid;
+    margin: 100px;
+    width: 304px;
+    height: 440px;
+    text-align: center;
+    display: inline-block; }
+    section .products div img {
+      object-fit: cover; }
+    section .products div p {
+      margin-bottom: 30px;
+      margin-top: 40px;
+      font-weight: 500; }
+
+section .title-gallery {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f5f5dc; }
+
+section .grid-container-gallery {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 350px;
+  gap: 10px; }
+  section .grid-container-gallery .grid-items {
+    border: 2px solid black; }
+    section .grid-container-gallery .grid-items.foto-persona {
+      grid-row: 1/4; }
+      section .grid-container-gallery .grid-items.foto-persona img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+  section .grid-container-gallery .grid-items img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.block-faciales {
+  background-image: url(../img/corporal-banner.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: calc(80vh - 520px); }
+  .block-faciales article h2 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 70px;
+    vertical-align: middle; }
+
+section .grid-container-body {
+  width: 100%;
+  height: 100%;
+  margin: 8rem auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: auto;
+  gap: 3.125rem; }
+  section .grid-container-body .imagenes {
+    display: flex;
+    justify-content: flex-end; }
+    section .grid-container-body .imagenes img {
+      border-radius: 200px;
+      object-fit: cover; }
+  section .grid-container-body .text-grid {
+    grid-column: 2/4; }
+    section .grid-container-body .text-grid h4 {
+      margin: 1rem auto;
+      font-size: 1.5rem;
+      color: #ffb9f0; }
+    section .grid-container-body .text-grid p {
+      line-height: 2rem; }
+  section .grid-container-body .ocultos {
+    visibility: hidden; }
+
+.main-contact {
+  display: flex;
+  justify-content: space-around; }
+  .main-contact .title-contact-1 {
+    display: flex;
+    flex-direction: column; }
+    .main-contact .title-contact-1 .title-contact {
+      margin: 50px auto 20px 200px;
+      max-width: 70vh; }
+      .main-contact .title-contact-1 .title-contact h2 {
+        font-size: 50px;
+        margin-bottom: 15px; }
+      .main-contact .title-contact-1 .title-contact h3 {
+        font-size: 25px;
+        margin-bottom: 15px; }
+      .main-contact .title-contact-1 .title-contact p {
+        font-size: 16px; }
+  .main-contact .right-content {
+    text-align: center;
+    margin: 6vh auto 120px 90px; }
+    .main-contact .right-content h2 {
+      margin-bottom: 8px;
+      font-size: 40px !important; }
+
+.main-contact .title-contact-1 form {
+  margin: 40px auto 60px 200px;
+  max-width: 90px;
+  float: left; }
+  .main-contact .title-contact-1 form .name {
+    margin-bottom: 20px; }
+  .main-contact .title-contact-1 form .email {
+    margin-bottom: 20px !important; }
+  .main-contact .title-contact-1 form .phone {
+    margin-bottom: 20px; }
+  .main-contact .title-contact-1 form .consulta h3 {
+    font-size: 20px;
+    margin-bottom: 7px; }
+  .main-contact .title-contact-1 form .consulta textarea {
+    resize: none; }
+  .main-contact .title-contact-1 form .submit {
+    margin-top: 10px; }
+
+footer {
+  background-color: #f5f5dc;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem; }
+  footer div {
+    display: inline-block;
+    margin: 40px 80px 40px 40px;
+    text-align: left; }
+    footer div .logo img {
+      width: 150px;
+      height: 90px; }
+    footer div .contacto h5 {
+      font-size: 25px;
+      margin-bottom: 15px; }
+    footer div .contacto .whatsapp {
+      display: block;
+      padding: 0;
+      margin: 0; }
+      footer div .contacto .whatsapp img {
+        width: 15px;
+        height: 15px; }
+      footer div .contacto .whatsapp a {
+        text-decoration: none; }
+        footer div .contacto .whatsapp a:visited {
+          color: black; }
+        footer div .contacto .whatsapp a p {
+          display: inline;
+          color: black; }
+    footer div .contacto .email {
+      display: block;
+      padding: 0;
+      margin: 0; }
+      footer div .contacto .email img {
+        width: 15px;
+        height: 15px; }
+      footer div .contacto .email a {
+        text-decoration: none; }
+        footer div .contacto .email a:visited {
+          color: black; }
+        footer div .contacto .email a p {
+          display: inline-block;
+          color: black; }
+    footer div .Tratamientos h5 {
+      font-size: 25px;
+      margin-bottom: 15px; }
+    footer div .Tratamientos .link-facial {
+      display: block;
+      text-decoration: none;
+      color: black; }
+      footer div .Tratamientos .link-facial:visited {
+        color: black; }
+    footer div .Tratamientos .link-corporal {
+      display: block;
+      text-decoration: none;
+      color: black; }
+      footer div .Tratamientos .link-corporal:visited {
+        color: black; }
+    footer div .direccion h5 {
+      font-size: 25px;
+      margin-bottom: 15px; }
+    footer div .direccion a {
+      text-decoration: none;
+      color: black; }
+      footer div .direccion a:visited {
+        color: black; }
+
+@media screen and (max-width: 1290px) {
+  section .grid-container-body .imagenes {
+    align-items: center; }
+    section .grid-container-body .imagenes img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 0 auto; }
+  section .grid-container-body .text-grid h4 {
+    font-size: 16px; }
+  section .grid-container-body .text-grid p {
+    font-size: 12px; }
+  .main-contact {
+    display: flex;
+    flex-direction: column; }
+    .main-contact .right-content {
+      margin-left: 11rem; }
+      .main-contact .right-content h2 {
+        text-align: start; } }
+
+@media screen and (max-width: 1050px) {
+  footer div {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 930px) {
+  header {
+    flex-direction: column;
+    height: 200px; }
+  section .grid-container-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 300px; }
+    section .grid-container-gallery .grid-item {
+      grid-column: span 1;
+      grid-row: span 1; }
+      section .grid-container-gallery .grid-item.foto-persona {
+        display: none; }
+    section .grid-container-gallery .img-9 {
+      display: none; }
+  .block-faciales {
+    height: 100%;
+    width: 100%; }
+    .block-faciales article h2 {
+      padding: 0;
+      font-size: 32px; }
+  .main-contact .title-contact-1 .title-contact {
+    margin: 0; }
+    .main-contact .title-contact-1 .title-contact h2 {
+      font-size: 35px; }
+    .main-contact .title-contact-1 .title-contact h3 {
+      font-size: 18px; }
+    .main-contact .title-contact-1 .title-contact p {
+      font-size: 13px;
+      margin-bottom: 20px; }
+  .main-contact .title-contact-1 form {
+    margin: 0; }
+    .main-contact .title-contact-1 form .name {
+      font-size: 13px; }
+    .main-contact .title-contact-1 form .email {
+      font-size: 13px; }
+    .main-contact .title-contact-1 form .phone {
+      font-size: 13px; }
+    .main-contact .title-contact-1 form .consulta {
+      font-size: 13px; }
+  .main-contact .right-content {
+    width: 100%;
+    margin: 3rem auto; }
+    .main-contact .right-content h2 {
+      display: none; }
+    .main-contact .right-content iframe {
+      width: 100%;
+      height: 200px; } }
+
+@media screen and (max-width: 730px) {
+  header {
+    height: 100%; }
+  header img {
+    visibility: hidden;
+    position: absolute; }
+  .block-faciales article h2 {
+    font-size: 32px; }
+  section .grid-container-body {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto; }
+    section .grid-container-body .imagenes {
+      display: none; }
+    section .grid-container-body .text-grid {
+      grid-column: span 1; }
+  form .consulta .fijo {
+    width: 300px;
+    height: 100px; } }
+
+@media screen and (max-width: 570px) {
+  header nav ul {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0; }
+    header nav ul li {
+      font-size: 15px; }
+  section .products {
+    display: flex;
+    flex-direction: column; }
+    section .products div {
+      width: 204px;
+      height: 370px;
+      margin: 30px auto; }
+      section .products div img {
+        width: 200px;
+        height: 200px; }
+  section .grid-container-gallery {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 200px;
+    row-gap: 25px; }
+    section .grid-container-gallery .grid-item {
+      border: none; }
+      section .grid-container-gallery .grid-item.img-8 {
+        display: none; }
+  .block-faciales article h2 {
+    font-size: 24px; }
+  section .grid-container-body {
+    margin: 20px auto; }
+    section .grid-container-body .text-grid h4 {
+      text-align: center; } }

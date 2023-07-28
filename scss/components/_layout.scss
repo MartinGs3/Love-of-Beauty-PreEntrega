@@ -1,0 +1,217 @@
+//index
+//promos
+section {
+    .title-promo {
+        text-align: center;
+        margin-top: 70px;
+
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    .products {
+        text-align: center;
+
+        div {
+            border: 2px $color-terciario solid;
+            margin: 100px;
+            width: 304px;
+            height: 440px;
+            text-align: center;
+            display: inline-block;
+
+            img {
+                object-fit: cover;
+            }
+
+            p {
+                margin-bottom: 30px;
+                margin-top: 40px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+//galeria
+section {
+    .title-gallery {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background-color: $color-secundario;
+    }
+
+    .grid-container-gallery {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 350px;
+        gap: 10px;
+
+        .grid-items {
+            border: 2px solid $color-terciario;
+
+            &.foto-persona {
+                grid-row: 1/4;
+
+                img {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .grid-items {
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+//bloque-faciales-corporales-tienda
+.block-faciales {
+    background-image: url(../img/corporal-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: calc(80vh - 520px);
+
+    article {
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            padding-top: 70px;
+            vertical-align: middle;
+        }
+    }
+}
+
+//grid-body-faciales-corporales
+section {
+    .grid-container-body {
+        width: 100%;
+        height: 100%;
+        margin: 8rem auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: auto;
+        gap: 3.125rem;
+
+        .imagenes {
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+                border-radius: 200px;
+                object-fit: cover;
+            }
+        }
+
+        .text-grid {
+            grid-column: 2/4;
+
+            h4 {
+                margin: 1rem auto;
+                font-size: 1.5rem;
+                color: $color-cuaternario;
+            }
+
+            p {
+                line-height: 2rem;
+            }
+        }
+
+        .ocultos {
+            visibility: hidden;
+        }
+    }
+}
+
+//pagina-contacto
+.main-contact {
+    display: flex;
+    justify-content: space-around;
+
+    .title-contact-1 {
+        display: flex;
+        flex-direction: column;
+
+        .title-contact {
+            margin: 50px auto 20px 200px;
+            max-width: 70vh;
+
+            h2 {
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 25px;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .right-content {
+        text-align: center;
+        margin: 6vh auto 120px 90px;
+
+        h2 {
+            margin-bottom: 8px;
+            font-size: 40px !important;
+        }
+    }
+}
+
+//formulario
+.main-contact {
+    .title-contact-1 {
+        form {
+            margin: 40px auto 60px 200px;
+            max-width: 90px;
+            float: left;
+
+            .name {
+                margin-bottom: 20px;
+            }
+
+            .email {
+                margin-bottom: 20px !important;
+            }
+
+            .phone {
+                margin-bottom: 20px;
+            }
+
+            .consulta {
+                h3 {
+                    font-size: 20px;
+                    margin-bottom: 7px;
+                }
+
+                textarea {
+                    resize: none;
+                }
+            }
+
+            .submit {
+                margin-top: 10px;
+            }
+        }
+    }
+}

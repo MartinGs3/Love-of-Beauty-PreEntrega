@@ -1,0 +1,272 @@
+@media screen and (max-width:1290px) {
+
+    //grid-faciales-corporales
+    section {
+        .grid-container-body {
+            .imagenes {
+                align-items: center;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    margin: 0 auto;
+                }
+            }
+
+            .text-grid {
+                h4 {
+                    font-size: 16px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    //mapa
+    .main-contact {
+        display: flex;
+        flex-direction: column;
+
+        .right-content {
+            margin-left: 11rem;
+
+            h2 {
+                text-align: start;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1050px) {
+    footer {
+        div {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:930px) {
+    header {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    //galeria
+    section {
+        .grid-container-gallery {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 300px;
+
+            .grid-item {
+                grid-column: span 1;
+                grid-row: span 1;
+
+                &.foto-persona {
+                    display: none;
+                }
+            }
+
+            .img-9 {
+                display: none;
+            }
+        }
+    }
+
+    //bloque-facial-corporal-tienda
+    .block-faciales {
+        height: 100%;
+        width: 100%;
+
+        article {
+            h2 {
+                padding: 0;
+                font-size: 32px;
+            }
+        }
+    }
+
+    //pagina-contacto
+    .main-contact {
+        .title-contact-1 {
+            .title-contact {
+                margin: 0;
+
+                h2 {
+                    font-size: 35px;
+                }
+
+                h3 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 13px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            form {
+                margin: 0;
+
+                .name {
+                    font-size: 13px;
+                }
+
+                .email {
+                    font-size: 13px;
+                }
+
+                .phone {
+                    font-size: 13px;
+                }
+
+                .consulta {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .right-content {
+            width: 100%;
+            margin: 3rem auto;
+
+            h2 {
+                display: none;
+            }
+
+            iframe {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:730px) {
+    header {
+        height: 100%;
+    }
+
+    header img {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    //bloque-facial-corporal
+    .block-faciales {
+        article {
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    //grid-body-faciales-corporales
+    section {
+        .grid-container-body {
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+
+            .imagenes {
+                display: none;
+            }
+
+            .text-grid {
+                grid-column: span 1;
+            }
+        }
+    }
+
+    form {
+        .consulta {
+            .fijo {
+                width: 300px;
+                height: 100px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:570px) {
+
+    //header
+    header {
+        nav {
+            ul {
+                text-align: center;
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+                li {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    //promos
+    section {
+        .products {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                width: 204px;
+                height: 370px;
+                margin: 30px auto;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+
+    //galeria
+    section {
+        .grid-container-gallery {
+            grid-template-columns: repeat(1, 1fr);
+            grid-auto-rows: 200px;
+            row-gap: 25px;
+
+            .grid-item {
+                border: none;
+
+                &.img-8 {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    //bloque-facial-corporal-tienda
+    .block-faciales {
+        article {
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    //grid-body-facial-corporal
+    section {
+        .grid-container-body {
+            margin: 20px auto;
+
+            .text-grid {
+                h4 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
