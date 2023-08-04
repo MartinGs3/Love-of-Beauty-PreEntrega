@@ -1,14 +1,10 @@
 footer {
-    background-color: $color-secundario;
+    background-color: nth($paleta-colores, 3);
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 3rem;
 
-    div {
+    @include flex (flex, column, center, center) div {
         display: inline-block;
         margin: 40px 80px 40px 40px;
         text-align: left;
@@ -22,7 +18,7 @@ footer {
 
         .contacto {
             h5 {
-                font-size: 25px;
+                font-size: nth($font-size, 5);
                 margin-bottom: 15px;
             }
 
@@ -40,12 +36,12 @@ footer {
                     text-decoration: none;
 
                     &:visited {
-                        color: $color-terciario;
+                        color: nth($paleta-colores, 6);
                     }
 
                     p {
                         display: inline;
-                        color: $color-terciario;
+                        color: nth($paleta-colores, 6);
                     }
                 }
             }
@@ -64,12 +60,12 @@ footer {
                     text-decoration: none;
 
                     &:visited {
-                        color: $color-terciario;
+                        color: nth($paleta-colores, 6);
                     }
 
                     p {
                         display: inline-block;
-                        color: $color-terciario;
+                        color: nth($paleta-colores, 6);
                     }
                 }
             }
@@ -77,43 +73,43 @@ footer {
 
         .Tratamientos {
             h5 {
-                font-size: 25px;
+                font-size: nth($font-size, 5);
                 margin-bottom: 15px;
             }
 
             .link-facial {
                 display: block;
                 text-decoration: none;
-                color: $color-terciario;
+                color: nth($paleta-colores, 6);
 
                 &:visited {
-                    color: $color-terciario;
+                    color: nth($paleta-colores, 6);
                 }
             }
 
             .link-corporal {
                 display: block;
                 text-decoration: none;
-                color: $color-terciario;
+                color: nth($paleta-colores, 6);
 
                 &:visited {
-                    color: $color-terciario;
+                    color: nth($paleta-colores, 6);
                 }
             }
         }
 
         .direccion {
             h5 {
-                font-size: 25px;
+                font-size: nth($font-size, 5);
                 margin-bottom: 15px;
             }
 
             a {
                 text-decoration: none;
-                color: $color-terciario;
+                color: nth($paleta-colores, 6);
 
                 &:visited {
-                    color: $color-terciario;
+                    color: nth($paleta-colores, 6);
                 }
             }
         }

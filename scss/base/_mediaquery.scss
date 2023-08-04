@@ -16,11 +16,11 @@
 
             .text-grid {
                 h4 {
-                    font-size: 16px;
+                    font-size: nth($font-size, 9);
                 }
 
                 p {
-                    font-size: 12px;
+                    font-size: nth($font-size, 12);
                 }
             }
         }
@@ -28,10 +28,7 @@
 
     //mapa
     .main-contact {
-        display: flex;
-        flex-direction: column;
-
-        .right-content {
+        @include flex-column (flex, column) .right-content {
             margin-left: 11rem;
 
             h2 {
@@ -87,7 +84,7 @@
         article {
             h2 {
                 padding: 0;
-                font-size: 32px;
+                font-size: nth($font-size, 4);
             }
         }
     }
@@ -99,15 +96,15 @@
                 margin: 0;
 
                 h2 {
-                    font-size: 35px;
+                    font-size: nth($font-size, 3);
                 }
 
                 h3 {
-                    font-size: 18px;
+                    font-size: nth($font-size, 8);
                 }
 
                 p {
-                    font-size: 13px;
+                    font-size: nth($font-size, 1);
                     margin-bottom: 20px;
                 }
             }
@@ -116,19 +113,19 @@
                 margin: 0;
 
                 .name {
-                    font-size: 13px;
+                    font-size: nth($font-size, 1);
                 }
 
                 .email {
-                    font-size: 13px;
+                    font-size: nth($font-size, 1);
                 }
 
                 .phone {
-                    font-size: 13px;
+                    font-size: nth($font-size, 1);
                 }
 
                 .consulta {
-                    font-size: 13px;
+                    font-size: nth($font-size, 1);
                 }
             }
         }
@@ -163,7 +160,7 @@
     .block-faciales {
         article {
             h2 {
-                font-size: 32px;
+                font-size: nth($font-size, 4);
             }
         }
     }
@@ -206,7 +203,7 @@
                 padding: 0;
 
                 li {
-                    font-size: 15px;
+                    font-size: nth($font-size, 10);
                 }
             }
         }
@@ -215,10 +212,7 @@
     //promos
     section {
         .products {
-            display: flex;
-            flex-direction: column;
-
-            div {
+            @include flex-column (flex, column) div {
                 width: 204px;
                 height: 370px;
                 margin: 30px auto;
@@ -252,7 +246,7 @@
     .block-faciales {
         article {
             h2 {
-                font-size: 24px;
+                font-size: nth($font-size, 6);
             }
         }
     }
