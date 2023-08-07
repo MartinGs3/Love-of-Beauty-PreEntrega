@@ -40,3 +40,12 @@ $border-1: (
     display: $flex;
     justify-content: $justify;
 }
+
+@mixin slide($name, $duration, $timing-fuction, $direction, $delay, $iteration-count){
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing-fuction;
+    animation-direction: $direction;
+    animation-delay: $delay;
+    animation-iteration-count:$iteration-count;
+}

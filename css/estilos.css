@@ -31,7 +31,7 @@ html {
   border-radius: 15px;
   border: 1px solid black;
   text-decoration: none;
-  transition: background-color 200ms; }
+  transition: background-color 300ms; }
   .botones-de-enlace:hover {
     background-color: white;
     color: #ff6fbe; }
@@ -58,6 +58,8 @@ header {
     padding: 0; }
     header nav ul li {
       margin: 5px; }
+      header nav ul li:hover {
+        color: #ff6fbe; }
       header nav ul li a {
         text-decoration: none;
         color: black; }
@@ -76,14 +78,13 @@ section .products {
     width: 310px;
     height: 450px;
     text-align: center;
-    display: inline-block; }
+    display: inline-block;
+    transition: 0.7s; }
+    section .products div:hover {
+      transform: scale(1.2);
+      box-shadow: 10px 10px 40px 2px black; }
     section .products div img {
-      object-fit: cover;
-      transition-property: border;
-      transition-duration: 200ms;
-      border: 2px solid transparent; }
-      section .products div img:hover {
-        border: 4px solid black; }
+      object-fit: cover; }
     section .products div p {
       margin-bottom: 30px;
       margin-top: 40px;
@@ -139,6 +140,39 @@ section .grid-container-gallery {
     padding-top: 70px;
     vertical-align: middle; }
 
+.animation-facial {
+  animation-name: slide-right;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  overflow: clip; }
+
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+    width: -300%; }
+  to {
+    margin: 0;
+    width: 100%; } }
+
+.animation-corporal {
+  animation-name: slide-left;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: initial;
+  animation-delay: 0s;
+  animation-iteration-count: 1; }
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin: 0;
+    width: 100%; } }
+
 section .grid-container-body {
   width: 100%;
   height: 100%;
@@ -146,7 +180,8 @@ section .grid-container-body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
-  gap: 3.125rem; }
+  gap: 3.125rem;
+  animation: fadein 5s forwards; }
   section .grid-container-body .imagenes {
     display: flex;
     justify-content: flex-end; }
@@ -166,6 +201,12 @@ section .grid-container-body {
       line-height: 2rem; }
   section .grid-container-body .ocultos {
     visibility: hidden; }
+
+@keyframes fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 .main-contact {
   display: flex;

@@ -23,7 +23,9 @@ header {
 
             li {
                 margin: 5px;
-
+                &:hover{
+                    color: nth($paleta-colores, 1);
+                }
                 a {
                     text-decoration: none;
                     color: nth($paleta-colores, 6)
