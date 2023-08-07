@@ -5,7 +5,8 @@
   padding: 0; }
 
 html {
-  font-family: 'Lora', serif; }
+  font-family: 'Lora', serif;
+  background-color: white; }
 
 /*---------MAIN-------*/
 /*-------Carousel-------*/
@@ -39,30 +40,26 @@ html {
     background-color: #f0f0f0; }
 
 header {
-  width: 100%;
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  padding-bottom: 10px;
-  top: 0; }
+  gap: 1rem;
+  padding: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   header .logo-nav {
-    width: 200px;
-    height: 100px;
-    padding: 5px 10px; }
+    max-width: 9rem;
+    margin-left: 5px; }
+  header .abrir-menu, header .cerrar-menu {
+    display: none; }
   header nav ul {
     list-style: none;
     display: flex;
-    margin: 0 auto;
-    padding: 0; }
-    header nav ul li {
-      margin: 5px; }
-      header nav ul li:hover {
-        color: #ff6fbe; }
-      header nav ul li a {
-        text-decoration: none;
-        color: black; }
+    gap: 1rem; }
+    header nav ul li:hover {
+      color: #ff6fbe; }
+    header nav ul li a {
+      text-decoration: none;
+      color: black; }
 
 section .title-promo {
   text-align: center;
@@ -397,11 +394,6 @@ footer {
       height: 200px; } }
 
 @media screen and (max-width: 730px) {
-  header {
-    height: 100%; }
-  header img {
-    visibility: hidden;
-    position: absolute; }
   .block-faciales article h2 {
     font-size: 32px; }
   section .grid-container-body {
@@ -416,13 +408,55 @@ footer {
     height: 100px; } }
 
 @media screen and (max-width: 570px) {
-  header nav ul {
-    text-align: center;
+  header {
     display: flex;
     align-items: center;
-    padding: 0; }
-    header nav ul li {
-      font-size: 15px; }
+    justify-content: space-between;
+    flex-direction: row; }
+    header .logo-nav {
+      display: flex; }
+    header .abrir-menu, header .cerrar-menu {
+      display: block;
+      border: 0;
+      font-size: 1.25rem;
+      background-color: transparent;
+      cursor: pointer; }
+    header .abrir-menu {
+      color: black; }
+    header .cerrar-menu {
+      color: white; }
+    header nav {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ff6fbe;
+      padding: 2rem;
+      box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+      z-index: 3;
+      animation: slide-nav, 2s, linear;
+      transition: 0.7s; }
+      header nav ul {
+        flex-direction: column;
+        align-items: end; }
+        header nav ul li a {
+          color: #ecececec; }
+  @keyframes slide-left {
+    from {
+      margin-left: 100%;
+      width: 300%; }
+    to {
+      margin: 0;
+      width: 100%; } }
+    header .visible {
+      opacity: 1;
+      visibility: visible; }
   section .products {
     display: flex;
     flex-direction: column; }

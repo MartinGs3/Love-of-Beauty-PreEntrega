@@ -147,14 +147,6 @@
 }
 
 @media screen and (max-width:730px) {
-    header {
-        height: 100%;
-    }
-
-    header img {
-        visibility: hidden;
-        position: absolute;
-    }
 
     //bloque-facial-corporal
     .block-faciales {
@@ -192,27 +184,75 @@
 }
 
 @media screen and (max-width:570px) {
-
     //header
     header {
-        nav {
-            ul {
-                text-align: center;
-                display: flex;
-                align-items: center;
-                padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
 
-                li {
-                    font-size: nth($font-size, 10);
+        .logo-nav {
+            display: flex;
+        }
+
+        .abrir-menu, .cerrar-menu {
+            display: block;
+            border: 0;
+            font-size: 1.25rem;
+            background-color: transparent;
+            cursor: pointer;
+        }
+        
+        .abrir-menu{
+            color: black;
+        }
+        .cerrar-menu{
+            color: white;
+        }
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            gap: 1rem;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-color: nth($paleta-colores , 1 );
+            padding: 2rem;
+            box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+            z-index: 3;
+            animation: slide-nav, 2s, linear;
+            transition: 0.7s;
+            ul {
+                flex-direction: column;
+                align-items: end;
+
+                li a {
+                    color: #ecececec;
                 }
             }
         }
+        @keyframes slide-left {
+            from {
+              margin-left: 100%;
+              width: 300%; }
+            to {
+              margin: 0;
+              width: 100%; } }
+        .visible{
+            opacity: 1;
+            visibility: visible;
+        }
+
     }
 
     //promos
     section {
         .products {
-            @include flex-column (flex, column) div {
+            @include flex-column (flex, column); div {
                 width: 204px;
                 height: 370px;
                 margin: 30px auto;
