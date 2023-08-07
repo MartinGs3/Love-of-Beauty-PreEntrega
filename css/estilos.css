@@ -5,8 +5,7 @@
   padding: 0; }
 
 html {
-  font-family: 'Lora', serif;
-  background-color: white; }
+  font-family: 'Lora', serif; }
 
 /*---------MAIN-------*/
 /*-------Carousel-------*/
@@ -60,6 +59,9 @@ header {
     header nav ul li a {
       text-decoration: none;
       color: black; }
+
+body {
+  background-color: white; }
 
 section .title-promo {
   text-align: center;
@@ -372,18 +374,18 @@ footer {
     .main-contact .title-contact-1 .title-contact h3 {
       font-size: 18px; }
     .main-contact .title-contact-1 .title-contact p {
-      font-size: 50px;
+      font-size: 15px;
       margin-bottom: 20px; }
   .main-contact .title-contact-1 form {
     margin: 0; }
     .main-contact .title-contact-1 form .name {
-      font-size: 50px; }
+      font-size: 13px; }
     .main-contact .title-contact-1 form .email {
-      font-size: 50px; }
+      font-size: 13px; }
     .main-contact .title-contact-1 form .phone {
-      font-size: 50px; }
+      font-size: 13px; }
     .main-contact .title-contact-1 form .consulta {
-      font-size: 50px; }
+      font-size: 13px; }
   .main-contact .right-content {
     width: 100%;
     margin: 3rem auto; }
