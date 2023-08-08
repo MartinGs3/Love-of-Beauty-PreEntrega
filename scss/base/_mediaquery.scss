@@ -15,7 +15,7 @@
             }
 
             .text-grid {
-                h4 {
+                h3 {
                     font-size: nth($font-size, 9);
                 }
 
@@ -28,7 +28,7 @@
 
     //mapa
     .main-contact {
-        @include flex-column (flex, column) .right-content {
+        @include flex-column (flex, column); .right-content {
             margin-left: 11rem;
 
             h2 {
@@ -248,7 +248,6 @@
         }
 
     }
-
     //promos
     section {
         .products {
@@ -297,7 +296,7 @@
             margin: 20px auto;
 
             .text-grid {
-                h4 {
+                h3 {
                     text-align: center;
                 }
             }

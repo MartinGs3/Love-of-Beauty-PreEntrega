@@ -12,10 +12,6 @@ html {
 .slide img {
   height: 60vh; }
 
-.carousel-item h2 {
-  font-size: 50px;
-  color: black; }
-
 .carousel-item p {
   font-size: 20px;
   color: black; }
@@ -192,7 +188,7 @@ section .grid-container-body {
         transform: scale(1.15); }
   section .grid-container-body .text-grid {
     grid-column: 2/4; }
-    section .grid-container-body .text-grid h4 {
+    section .grid-container-body .text-grid h3 {
       margin: 1rem auto;
       font-size: 1.5rem;
       color: #ffb9f0; }
@@ -265,7 +261,7 @@ footer {
     footer div .logo img {
       width: 150px;
       height: 90px; }
-    footer div .contacto h5 {
+    footer div .contacto h3, footer div .contacto h4 {
       font-size: 25px;
       margin-bottom: 15px; }
     footer div .contacto .whatsapp {
@@ -296,7 +292,7 @@ footer {
         footer div .contacto .email a p {
           display: inline-block;
           color: black; }
-    footer div .Tratamientos h5 {
+    footer div .Tratamientos h3, footer div .Tratamientos h4 {
       font-size: 25px;
       margin-bottom: 15px; }
     footer div .Tratamientos .link-facial {
@@ -311,7 +307,7 @@ footer {
       color: black; }
       footer div .Tratamientos .link-corporal:visited {
         color: black; }
-    footer div .direccion h5 {
+    footer div .direccion h3, footer div .direccion h4 {
       font-size: 25px;
       margin-bottom: 15px; }
     footer div .direccion a {
@@ -328,7 +324,7 @@ footer {
       height: 200px;
       object-fit: cover;
       margin: 0 auto; }
-  section .grid-container-body .text-grid h4 {
+  section .grid-container-body .text-grid h3 {
     font-size: 16px; }
   section .grid-container-body .text-grid p {
     font-size: 12px; }
@@ -481,5 +477,5 @@ footer {
     font-size: 24px; }
   section .grid-container-body {
     margin: 20px auto; }
-    section .grid-container-body .text-grid h4 {
+    section .grid-container-body .text-grid h3 {
       text-align: center; } }
