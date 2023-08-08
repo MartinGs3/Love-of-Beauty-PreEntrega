@@ -232,8 +232,7 @@ section .grid-container-body {
   .main-contact .title-contact-1 form .email,
   .main-contact .title-contact-1 form .phone {
     margin-bottom: 20px; }
-  .main-contact .title-contact-1 form .consulta h3 {
-    font-size: 20px;
+  .main-contact .title-contact-1 form .consulta p {
     margin-bottom: 7px; }
   .main-contact .title-contact-1 form .consulta textarea {
     resize: none; }
