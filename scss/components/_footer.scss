@@ -18,8 +18,7 @@ footer {
 
         .contacto {
             h3, h4 {
-                font-size: nth($font-size, 5);
-                margin-bottom: 15px;
+                @extend %h3-54-footer;
             }
 
             .whatsapp {
@@ -47,34 +46,13 @@ footer {
             }
 
             .email {
-                display: block;
-                padding: 0;
-                margin: 0;
-
-                img {
-                    width: 15px;
-                    height: 15px;
-                }
-
-                a {
-                    text-decoration: none;
-
-                    &:visited {
-                        color: nth($paleta-colores, 6);
-                    }
-
-                    p {
-                        display: inline-block;
-                        color: nth($paleta-colores, 6);
-                    }
-                }
+                @extend .whatsapp;
             }
         }
 
         .Tratamientos {
             h3, h4 {
-                font-size: nth($font-size, 5);
-                margin-bottom: 15px;
+                @extend %h3-54-footer;
             }
 
             .link-facial {
@@ -88,20 +66,13 @@ footer {
             }
 
             .link-corporal {
-                display: block;
-                text-decoration: none;
-                color: nth($paleta-colores, 6);
-
-                &:visited {
-                    color: nth($paleta-colores, 6);
-                }
+                @extend .link-facial;
             }
         }
 
         .direccion {
             h3, h4 {
-                font-size: nth($font-size, 5);
-                margin-bottom: 15px;
+                @extend %h3-54-footer;
             }
 
             a {
