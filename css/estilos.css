@@ -62,7 +62,8 @@ header {
   header nav ul {
     list-style: none;
     display: flex;
-    gap: 1rem; }
+    gap: 1rem;
+    margin-bottom: 0; }
     header nav ul li:hover {
       color: #ff6fbe; }
     header nav ul li a {
