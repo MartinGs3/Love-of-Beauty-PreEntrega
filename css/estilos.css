@@ -228,7 +228,9 @@ section .grid-container-body {
 .main-contact .title-contact-1 form {
   margin: 40px auto 60px 200px;
   max-width: 90px;
-  float: left; }
+  float: left;
+  font-weight: bold;
+  font-size: 20px; }
   .main-contact .title-contact-1 form .name,
   .main-contact .title-contact-1 form .email,
   .main-contact .title-contact-1 form .phone {

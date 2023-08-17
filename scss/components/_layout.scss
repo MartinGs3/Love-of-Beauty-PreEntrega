@@ -240,6 +240,8 @@ section {
             margin: 40px auto 60px 200px;
             max-width: 90px;
             float: left;
+            font-weight: bold;
+            font-size: nth($font-size , 7 );
 
             .name,
             .email,

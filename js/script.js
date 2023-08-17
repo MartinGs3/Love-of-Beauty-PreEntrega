@@ -10,3 +10,10 @@ abrir.addEventListener("click", () => {
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
+
+function clearText() {
+    var textarea = document.getElementById("consulta");
+    if (textarea.value === "Escribe aquí...") {
+        textarea.value = "";
+    }
+}

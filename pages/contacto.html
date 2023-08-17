@@ -46,20 +46,20 @@
             </article>
             <form action="" method="" enctype="">
                 <div class="name">
-                    <label for="nombre">Nombre</label>
+                    <label for="nombre">Nombre:</label>
                     <input type="text" name="nombre" id="nombre" required>
                 </div>
                 <div class="email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="tantan15@gmail.com">
                 </div>
                 <div class="phone">
-                    <label for="telefono">Telefono</label>
-                    <input type="number" name="telefono" id="telefono">
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="Ej. 011-5744-7846" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" inputmode="numeric" required>
                 </div>
                 <div class="consulta">
-                    <p>Consulta</p>
-                    <textarea name="" id="" cols="65" rows="10" class="fijo"></textarea>
+                    <p>Mensaje:</p>
+                    <textarea name="consulta" id="consulta" cols="65" rows="10" class="fijo" onfocus="clearText()">Escribe aquí...</textarea>
                 </div>
                 <div class="submit">
                     <input type="submit">
