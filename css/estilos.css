@@ -255,7 +255,8 @@ footer {
     text-align: left; }
     footer div .logo img {
       width: 150px;
-      height: 90px; }
+      height: 90px;
+      vertical-align: baseline; }
     footer div .contacto .whatsapp, footer div .contacto .email {
       display: block;
       padding: 0;
